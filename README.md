@@ -87,33 +87,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](LICENSE).
 
-```bash
 
-query {
-  getPosts {
-    id, title, content, published
-  }
-}
-
-query($id: Int!) {
-  getPost(id: $id) {
-    id, title, content, published
-  }
-}
-
-mutation {
-  createPost(createPostInput:{
-    title:"New Post",
-    content:"I am the post",
-    published: true
-  }) {
-    id, title, content, published
-  }
-}
-
-mutation {
-removePost(id:1)
-}
-
-
-```
